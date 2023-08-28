@@ -1,0 +1,14 @@
+[global]
+ioengine=libaio
+direct=1
+runtime=10
+time_based
+group_reporting
+allow_mounted_write=1
+
+[ssd_benchmark]
+filename=/dev/sda1
+rw=randrw
+bs=4k
+iodepth=64
+numjobs=4
